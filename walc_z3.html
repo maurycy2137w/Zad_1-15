@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<title>Walczak Z3_html</title>
+    <meta charset="UTF-8">
+    <title>Cechy modyfikowania formatowania w HTML oraz CSS</title>
 </head>
 <body>
-<table width="900" height="300" border="1" align="center">
-<tr>
-<td colspan="3">
-<iframe scrolling="no" width="900" height="50" name="obszar_logo" src="logo.html" border="0"></iframe>
+
+    <h1><u>Cechy modyfikowania formatowania w HTML oraz CSS (tabela).</u></h1>
+
+    <table border="1" width="100%" cellspacing="0" cellpadding="6">
+        <tr>
+            <th colspan="2">Cechy modyfikowania formatowania w:</th>
+        </tr>
+        <tr>
+            <th width="50%">w HTML</th>
+            <th width="50%">w CSS</th>
+        </tr>
+        <tr>
+            <td valign="top">
+                modyfikacja wyglądu elementów strony jest bardzo <b>żmudna</b> (atrybuty i znaczniki które za to odpowiadają, są porozrzucane w różnych miejscach kodu, mieszając się ze strukturą dokumentu).
+            </td>
+            <td valign="top">
+                rozdzielenie <b>struktury i prezentacji</b> dokumentów czyli: wszystkie polecenia dotyczące formatowania można umieścić w jednym miejscu (tzw. arkuszu) i powiązać je z konkretnymi elementami, wstawionymi za pomocą czystego (X)HTML. Taki sposób sprawia, że modyfikacja wyglądu stron może przebiegać dużo sprawniej.
+            </td>
+        </tr>
+    </table>
+
+    <h2>Nowe możliwości CSS</h2>
+
+    <p>1) <b>Przestarzałe atrybuty i znaczniki</b>, znajdujące się bezpośrednio w składni HTML, które dotyczą formatowania (elementy <b>zdeprecjonowane</b>), będą stopniowo wycofywane przez producentów przeglądarek internetowych, na rzecz rekomendowanych analogicznych deklaracji CSS.</p>
+    <p>2) Dokumenty pisane z wykorzystaniem arkuszy stylów są zwykle bardziej <b>przejrzyste i krótsze</b>.</p>
+    <p>3) Style pozwalają w <b>łatwy sposób zarządzać</b> całą serią dokumentów, poprzez stosowanie zewnętrznych arkuszy stylów.</p>
+    <p>4) Dzięki możliwości stosowania klas selektorów, znacznie oszczędzamy sobie pisania. W <b>jednym miejscu określamy wszystkie atrybuty formatowania</b> (których może być bardzo dużo), odnoszące się do wielu elementów, które mają wyglądać tak samo. Bezpośrednio przy elemencie wystarczy podać tylko nazwę klasy i nie musimy już wypisywać dużej ilości poleceń. Znacznie przyspiesza to późniejszą modyfikację strony, ponieważ zmian dokonujemy tylko w jednym miejscu, a wpływają one na wiele elementów jednocześnie.</p>
+    <p>5) Możliwość <b>stosowania różnorodnych jednostek oraz sposobów definiowania kolorów</b>.</p>
+    <p>6) Różne wartości <b>pogrubienia czcionki</b> (9 rodzajów)</p>
+    <p>7) <b>Dodatkowe możliwości formatowania tekstu</b></p>
+    <p>8) <b>Efektowne filtry graficzne.</b></p>
+    <p>9) Dodatkowe możliwości <b>określenia wyglądu dokumentów podczas ich drukowania</b>.</p>
 
 </body>
 </html>
